@@ -21,7 +21,7 @@ echo Name %FullName%
 # Let's see if it worked
 echo joining Netmaker network for %SerialNumber% %FullName% 
 cd /usr/local/
-sudo netclient join --name "%SerialNumber%""-""%FullName% " -t $token
+sudo netclient join --name "%SerialNumber%""-""%FullName%" -t $token
 echo joined "%SerialNumber%"" ""%FullName% " to $client network
 
 fi
