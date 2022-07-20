@@ -16,13 +16,13 @@ else
 
 # Find machine Serial number (Mosyle variables)
 echo Serial %SerialNumber% 
-# Next find machine users long name (Mosyle variables)
-echo Name %FullName% 
+# Next find machine device name (Mosyle variables)
+echo Name %DeviceName% 
 # Let's see if it worked
-echo joining Netmaker network for %SerialNumber% %FullName% 
+echo joining Netmaker network for %SerialNumber% %DeviceName%
 cd /usr/local/
-sudo netclient join --name "%SerialNumber%""-""%FullName%" -t $token
-echo joined "%SerialNumber%"" ""%FullName% " to $client network
+sudo netclient join --name "%SerialNumber%"" ""%DeviceName%" -t $token
+echo joined "%SerialNumber%"" ""%DeviceName%" to $client network
 
 fi
 exit 0
